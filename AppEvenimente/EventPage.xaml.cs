@@ -1,4 +1,8 @@
-﻿using System.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -12,16 +16,16 @@ using System.Windows.Shapes;
 namespace AppEvenimente
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for EventPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class EventPage : Page
     {
-        public MainWindow()
+        public EventPage()
         {
             InitializeComponent();
         }
 
-        private void btnEvent_Click(object sender, RoutedEventArgs e)
+        private void btnAddEvent_Click(object sender, RoutedEventArgs e)
         {
 
         }
