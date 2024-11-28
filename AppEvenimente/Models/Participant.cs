@@ -12,5 +12,6 @@ namespace AppEvenimente.Models
         public string? NumeParticipant { get; set; }
         public string? Email { get; set; }
         public int EvenimentId { get; set; }
+        public Event? Event { get; set; }
     }
 }

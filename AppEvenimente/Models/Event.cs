@@ -12,5 +12,7 @@ namespace AppEvenimente.Models
         public string? NumeEveniment { get; set; }
         public DateTime DataEveniment { get; set; }
         public string? Locatie { get; set; }
+        public ICollection<Participant>? Participanti { get; set; }
+
     }
 }
