@@ -53,7 +53,7 @@ namespace AppEvenimente.ViewModels
         private void AddEveniment()
         {
             var addWindow = new AddEditEventWindow();
-            if (addWindow.ShowDialog() == true) // Așteaptă răspunsul utilizatorului
+            if (addWindow.ShowDialog() == true) 
             {
                 try
                 {
