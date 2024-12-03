@@ -1,0 +1,28 @@
+﻿<Window x:Class="AppEvenimente.Views.AddEditEventWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppEvenimente.Views"
+        mc:Ignorable="d"
+        Title="AddEditEventWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Margin="10">
+            <Label Content="Nume Eveniment:"/>
+            <TextBox Text="{Binding CurrentEvent.NumeEveniment, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
+            <Label Content="Data:"/>
+            <DatePicker SelectedDate="{Binding CurrentEvent.Data}" Margin="0,0,0,10"/>
+            <Label Content="Locație:"/>
+            <TextBox Text="{Binding CurrentEvent.Locatie, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+            <Button Content="Anulează" Width="100" Margin="5" Click="Cancel_Click"/>
+            <Button Content="Salvează" Width="100" Margin="5" Click="Save_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
